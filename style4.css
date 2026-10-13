@@ -1,0 +1,75 @@
+/* 1. span всередині p.text-background: курсив, жирність, підкреслення
+      (комбінатор нащадків: клас + тег) */
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 2. span всередині .text-background, який знаходиться в div: жовтий фон
+      (комбінатор нащадків: тег + клас + тег) */
+div .text-background span {
+    background-color: yellow;
+}
+
+/* 3. span всередині іншого span: сірий фон, перекреслений текст
+      (комбінатор нащадків: два теги) */
+span span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+/* 4. span всередині span, який знаходиться в нумерованому списку:
+      розмір 18px, верхній регістр (комбінатор нащадків: три теги) */
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* 5. абзаци, що є прямими дочірніми елементами section:
+      тінь тексту та відступ першого рядка (дочірній комбінатор: два теги) */
+section > p {
+    text-shadow: 3px 3px 5px blue;
+    text-indent: 50px;
+}
+
+/* 6. ul, що безпосередньо знаходиться в li: зображення замість маркера
+      (дочірній комбінатор: два теги) */
+li > ul {
+    list-style-type: "✔";
+}
+
+/* 7. абзаци .text-background, що є прямими дітьми div:
+      інтервал між словами 50px (дочірній комбінатор: тег + клас) */
+div > .text-background {
+    word-spacing: 50px;
+}
+
+/* 8. абзаци, що є прямими дітьми div.text-bold: жирність
+      (дочірній комбінатор: клас + тег) */
+.text-bold > p {
+    font-weight: bold;
+}
+
+/* 9. абзаци, що є прямими дітьми section, який є прямою дитиною div.text-bold:
+      міжрядковий інтервал 45px (дочірній комбінатор: клас + два теги) */
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+/* 10. абзац, що йде відразу після img: коричневий фон
+       (комбінатор наступного сусіда: два теги) */
+img + p {
+    background-color: brown;
+}
+
+/* 11. усі абзаци-сиблінги після section: червоний колір тексту
+       (комбінатор всіх наступних сусідів: два теги) */
+section ~ p {
+    color: red;
+
+}
+.section1{
+    line-height: 45px;
+
+}
