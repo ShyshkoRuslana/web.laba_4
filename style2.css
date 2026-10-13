@@ -1,0 +1,41 @@
+
+table{
+    border: 1px solid black;
+    width: 70%;
+    collapse: 0;
+    align-content: center;
+}
+
+/* align="center" */
+h1, h2, p {
+    text-align: center;
+}
+
+/* <font color="red"> */
+h1 {
+    color: red;
+}
+
+/* <font size="4"> для назв продуктів */
+.name {
+    font-size: 18px;
+}
+
+/* <font size="3"> для кількості */
+.amount {
+    font-size: 16px;
+}
+
+/* <mark color="yellow"> */
+mark {
+    background-color: yellow;
+}
+
+/* <hr color="green" size="4" width="70%"> */
+hr {
+    width: 70%;
+    height: 4px;
+    margin: 20px auto;
+    border: none;
+    background-color: green;
+}
